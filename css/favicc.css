@@ -7,7 +7,6 @@
     outline: none;
     color: #fff;
     background: rgb(0, 0, 0);
-    font-size: 10px;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -68,10 +67,7 @@ body {
     height: 100vh;
     margin: 0px;
     text-align: center;
-    background-image: url(../images/hatter.jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
+    background: url(../images/fa2.jpg) repeat center;
     }
 
     .fej {
