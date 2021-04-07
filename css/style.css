@@ -132,3 +132,11 @@ body {
     color: whitesmoke;
     font-family: 'Russo One', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}

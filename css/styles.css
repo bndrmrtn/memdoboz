@@ -138,3 +138,16 @@ body {
     position:unset;
     text-align: center;
 }
+
+body {
+    font-family: 'Anton', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: rgb(46, 45, 45);
+}
