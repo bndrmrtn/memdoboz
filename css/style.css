@@ -127,3 +127,8 @@ body {
       margin:0 auto;
     }
   }
+
+#notfind {
+    color: whitesmoke;
+    font-family: 'Russo One', sans-serif;
+}
