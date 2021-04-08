@@ -34,7 +34,7 @@
             To: 'memdoboz@gmail.com',
             From: "memdobozweb@gmail.com",
             Subject: "Memdoboz Hírdetés",
-            Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + document.getElementById("insta").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value,
+            Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value,
           })
             .then(function (message) {
               window.open("https://memdoboz.xyz/pages/ad/bekuldve.html")
@@ -80,8 +80,9 @@
                     <span class="bar"></span>
                     <label>Név</label>
                   </div>
-                  <div class="group">      
-                    <input type="text" required id="insta">
+                  <div class="group">
+                      <input type="text" required id="insta">   
+                    
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>Instagram</label>
