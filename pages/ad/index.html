@@ -2,6 +2,8 @@
 <html>
     <link rel="stylesheet" href="../../css/styles2.css">
     <link rel="stylesheet" href="../../css/menu.css">
+
+</script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width", initial-scale=1.0>
@@ -16,7 +18,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <script data-ad-client="ca-pub-7148066920931015" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+        <script src=
+        "https://smtpjs.com/v3/smtp.js">
+      </script>
+      
+      <script type="text/javascript">
+        function sendEmail() {
+            
+          Email.send({
+            Host: "smtp.gmail.com",
+            Username: "memdobozweb@gmail.com",
+            Password: "MemDobozweb1",
+            To: 'memdoboz@gmail.com',
+            From: "memdobozweb@gmail.com",
+            Subject: "Memdoboz Hírdetés",
+            Body: "Név: " + document.getElementById("nev").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value,
+          })
+            .then(function (message) {
+              window.open("https://memdoboz.xyz/pages/ad/bekuldve.html")
+            });
+        }
+      </script>
     </head>
+
+    
     <body>
         <br>
         <div class="fej">
@@ -40,15 +65,19 @@
 
        <div id="textbubble">
             <h2>Hírdetéssel kapcsolatos kapcsolatfelvételi lehetsőség</h2>
-            <form action="https://formsubmit.co/memdoboz@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="Hírdetés mémdoboz">
-                <textarea id="story" name="name" rows="3" cols="24" placeholder="Üzenet" class="form__input" required></textarea>
+
+
+            <form >
+
+                <input placeholder="Név" type="text" name="email" required class="form__input" id="nev">
                 <br>
-                <input placeholder="Email cím" type="email" name="email" required class="form__input">
+                <input placeholder="Email cím" type="email" name="email" required class="form__input" id="email">
                 <br>
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://memdoboz.xyz/pages/ad/bekuldve.html">
-                <button type="submit" class="gomb">Küldés</button>
+                <textarea id="uzenet" name="name" rows="3" cols="24" placeholder="Üzenet" class="form__input" required></textarea>
+                <br>
+                
+                <input type="button" class="gomb" value="Küldés" 
+                onclick="sendEmail()" />
             </form>
         </div>
 <br>
@@ -94,6 +123,8 @@
     <input type="text" placeholder="Email" id="ageField">
     <button onclick="writeData()">Küldés</button>
 </div>-->
+
+
 
 
 
