@@ -30,6 +30,55 @@
         <a href="https://www.paypal.com/donate?business=ertelmetlentalalmanyok%40gmail.com&currency_code=HUF" target="blank"><button class="glow-on-hover" type="button">Adakozás</button></a>
     </div>
     
+
+
+
+
+
+
+
+
+
+    <script language=JavaScript>
+    
+    
+        //Disable right mouse click Script
+        //By Geek Site.in
+        
+        
+        var message="Engedély megtagadva!";
+        
+        ///////////////////////////////////
+        function clickIE4(){
+        if (event.button==2){
+        alert(message);
+        return false;
+        }
+        }
+        
+        function clickNS4(e){
+        if (document.layers||document.getElementById&&!document.all){
+        if (e.which==2||e.which==3){
+        alert(message);
+        return false;
+        }
+        }
+        }
+        
+        if (document.layers){
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown=clickNS4;
+        }
+        else if (document.all&&!document.getElementById){
+        document.onmousedown=clickIE4;
+        }
+        
+        document.oncontextmenu=new Function("alert(message);return false")
+        
+        // --> 
+        </script>
+
+
     </body>
 
 </html>
