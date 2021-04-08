@@ -134,20 +134,25 @@
     }
     table > *, table tr, table td, table th {
       display: block;
+      width: 60%;
     }
     table thead {
       display: none;
+      width: 60%;
     }
     table tbody tr {
       height: auto;
       padding: 37px 0;
+      width: 60%;
     }
     table tbody tr td {
       padding-left: 40% !important;
       margin-bottom: 24px;
+      width: 60%;
     }
     table tbody tr td:last-child {
       margin-bottom: 0;
+      width: 60%;
     }
     table tbody tr td:before {
       font-family: OpenSans-Regular;
@@ -159,6 +164,7 @@
       width: 40%;
       left: 30px;
       top: 0;
+      width: 60%;
     }
     table tbody tr td:nth-child(1):before {
       content: "Kor:";
