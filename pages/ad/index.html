@@ -2,6 +2,8 @@
 <html>
     <link rel="stylesheet" href="../../css/styles2.css">
     <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/button.css">
 
 </script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,7 +34,7 @@
             To: 'memdoboz@gmail.com',
             From: "memdobozweb@gmail.com",
             Subject: "Memdoboz Hírdetés",
-            Body: "Név: " + document.getElementById("nev").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value,
+            Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + document.getElementById("insta").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value,
           })
             .then(function (message) {
               window.open("https://memdoboz.xyz/pages/ad/bekuldve.html")
@@ -61,24 +63,105 @@
             </div>
           </div>
         <br>-->
-
+          <br>
 
        <div id="textbubble">
-            <h2>Hírdetéssel kapcsolatos kapcsolatfelvételi lehetsőség</h2>
 
 
-            <form >
+            <div class="container">
+  
+                <h2>Hírdetések<small>Kapcsolatfelvétel</small></h2>
+                
+                <form>
+                  
+                  <div class="group">      
+                    <input type="text" required id="nev">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Név</label>
+                  </div>
+                  <div class="group">      
+                    <input type="text" required id="insta">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Instagram felhasználónév</label>
+                  </div>
+                    
+                  <div class="group">      
+                    <input type="email" required id="email">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email</label>
+                  </div>
 
-                <input placeholder="Név" type="text" name="email" required class="form__input" id="nev">
+                  <div class="group">      
+                    <textarea name="name" rows="7" cols="24" placeholder="Üzenet" class="form__input" id="uzenet" required></textarea>
+                  </div>
+
+                 <a href="javascript:;" id="send"  onclick="sendEmail()">
+                    <svg class="icon-arrow before">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span class="label">Küldés</span>
+                    <svg class="icon-arrow after">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </a>
+                
+                <svg style="display: none;">
+                  <defs>
+                    <symbol id="arrow" viewBox="0 0 35 15">
+                      <title>Arrow</title>
+                      <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "/>
+                    </symbol>
+                  </defs>
+                </svg>
+                  
+                </form>
+                
+              </div>
+
+
+              <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!---       <form >
+                <input placeholder="Keresztnév" type="text" required class="form__input2" id="knev">
+                <input placeholder="Vezetéknév" type="text" required class="form__input2" id="vnev">
                 <br>
-                <input placeholder="Email cím" type="email" name="email" required class="form__input" id="email">
+                <input placeholder="Instagram felhasználónév" type="text" required class="form__input" id="insta">
+                <br>
+                <input placeholder="Email cím" type="email" " required class="form__input" id="email">
                 <br>
                 <textarea id="uzenet" name="name" rows="3" cols="24" placeholder="Üzenet" class="form__input" required></textarea>
                 <br>
-                
                 <input type="button" class="gomb" value="Küldés" 
                 onclick="sendEmail()" />
-            </form>
+            </form>-->
         </div>
 <br>
 

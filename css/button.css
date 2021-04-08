@@ -1,0 +1,76 @@
+html, body {
+    display: grid;
+    height: 100%;
+}
+
+#send {
+    border: 4px solid #3F3F3F;
+    color: #3F3F3F;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: auto;
+    padding: 12px 32px 12px 82px;
+    position: relative;
+    text-decoration: none;
+}
+
+#send .label,
+#send .icon-arrow {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    perspective: 1000;
+}
+
+#send .label {
+    display: inline-block;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#send .icon-arrow {
+    fill: #3F3F3F;
+    height: 15px;
+    top: 17px;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1), opacity .4s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 35px;
+}
+
+#send .icon-arrow.before {
+    left: 32px;
+    margin-right: 15px;
+    position: absolute;
+    transform-origin: left center;
+}
+
+#send .icon-arrow.after {
+    margin-left: 15px;
+    opacity: 0;
+    position: absolute;
+    right: 32px;
+    transform: translateX(75%) scaleX(0.1);
+    transform-origin: right center;
+}
+
+#send:hover .label {
+    transform: translateX(-52px);
+}
+
+#send:hover .icon-arrow.before {
+    opacity: 0;
+    transform: translateX(-75%) scaleX(0.1);
+}
+
+#send:hover .icon-arrow.after {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+}
+
+#send:active {
+    border-color: #707070;
+    color: #7e7d7d;
+}
+
+#send:active .icon-arrow {
+    fill: #747474;
+}
