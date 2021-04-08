@@ -202,3 +202,11 @@ a:hover {
     transform: translateY(-4rem);
   }
   
+  #whitea {
+    color:white;
+  
+  }
+  
+  #whitea:hover {
+    color: #808080;
+  }

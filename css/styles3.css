@@ -355,3 +355,11 @@ a:hover {
     text-align: center;
 }
 
+#whitea {
+  color:white;
+
+}
+
+#whitea:hover {
+  color: #808080;
+}
