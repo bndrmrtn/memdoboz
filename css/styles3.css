@@ -128,7 +128,7 @@
   }
   
   
-  @media screen and (max-width: 992px) {
+/*  @media screen and (max-width: 992px) {
     table {
       display: block;
     }
@@ -148,11 +148,9 @@
     table tbody tr td {
       padding-left: 40% !important;
       margin-bottom: 24px;
-      width: 60%;
     }
     table tbody tr td:last-child {
       margin-bottom: 0;
-      width: 60%;
     }
     table tbody tr td:before {
       font-family: OpenSans-Regular;
@@ -164,7 +162,6 @@
       width: 40%;
       left: 30px;
       top: 0;
-      width: 60%;
     }
     table tbody tr td:nth-child(1):before {
       content: "Kor:";
@@ -198,7 +195,7 @@
       padding-right: 15px;
     }
   }
-
+*/ 
 /*////////////////////////////  OLDAL  //////////////////////////// */
 
 
