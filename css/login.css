@@ -154,6 +154,6 @@ input:focus ~ .highlight {
 
 .form__input:focus{
     outline: none !important;
-    border-color: #0562c5;
-    box-shadow: 0 0 10px #9bafff;
+    border-color: #dbd7d7;
+    box-shadow: 0 0 10px #a39d9d;
 }

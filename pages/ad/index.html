@@ -81,6 +81,8 @@
                     <label>Név</label>
                   </div>
                   <div class="group">
+                      
+
                       <input type="text" required id="insta">   
                     
                     <span class="highlight"></span>
@@ -96,7 +98,7 @@
                   </div>
 
                   <div class="group">      
-                    <textarea name="name" rows="7" cols="24" placeholder="Üzenet" class="form__input" id="uzenet" required></textarea>
+                    <textarea name="name" rows="7" cols="24" placeholder="Üzenet" class="form__input" id="uzenet" maxlength="600" required></textarea>
                   </div>
 
                  <a href="javascript:;" id="send"  onclick="sendEmail()">
@@ -135,8 +137,14 @@
 
 
 
+         <!--    <script>
+                  const $input = document.getElementById("#insta");
+                  const INSTA = /[0-9\/]+/;
+                  $input.addEventListener("keydown", event => {if(!INSTA.test(event.key))
 
-
+                {       event.preventDefault(); }  })
+              </script>
+--> 
 
 
 
