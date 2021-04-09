@@ -363,3 +363,7 @@ a:hover {
 #whitea:hover {
   color: #808080;
 }
+
+small{
+  color: rgb(119, 119, 119);
+}
