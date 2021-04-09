@@ -1,8 +1,11 @@
 <html>
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/fbutton.css">
     <link rel="stylesheet" href="../../css/login.css">
     <link rel="stylesheet" href="../../css/styles3.css">
     <link rel="stylesheet" href="../../css/styles2.css">
+    <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
     <link rel="stylesheet" href="../../css/menu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
@@ -13,12 +16,80 @@
 <!-- Google anality -->
    
     <head>
+<!---------------- SEND1 ------------------------>
+
+<script src=
+"https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script type="text/javascript">
+function sendEmail1() {
+   
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "memdobozweb@gmail.com",
+    Password: "MemDobozweb1",
+    To: 'memdoboz@gmail.com',
+    From: "memdobozweb@gmail.com",
+    Subject: "Webdoboz egyszerű oldal ajánlat",
+    Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value,
+  })
+    .then(function (message) {
+      alert("1")
+    });
+}
+</script>
+
+
+<!---------------- SEND2 ------------------------>
+
+<script src=
+"https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script type="text/javascript">
+function sendEmail2() {
+   
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "memdobozweb@gmail.com",
+    Password: "MemDobozweb1",
+    To: 'memdoboz@gmail.com',
+    From: "memdobozweb@gmail.com",
+    Subject: "Webdoboz js oldal",
+    Body: "Név: " + document.getElementById("nev2").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta2").value + " Email cím: " + document.getElementById("email2").value + " Üzenet: " + document.getElementById("uzenet2").value,
+  })
+    .then(function (message) {
+      alert("2")
+    });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <title>Főoldal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <script data-ad-client="ca-pub-7148066920931015" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script src="index.js"></script>
+        <script src="../../scripts/send1.js"></script>
     </head>
     <body>
         <br>
@@ -40,10 +111,12 @@
 
             <h2>Szeretnél magadnak is egy ehhez hasonló oldalt?<br><small>A saját elképzeléseid szerint?</small></h2>
     
+<!----------------------------  AJANLAT1  --------------------------------->
+
         <br>
         <div id="ajanlat1">
         <div id="textbubble">
-            <a href="pages/ad/index.html"> <i class="fa fa-edit fa-5x"></i><br>
+            <a onclick="ajanlat1()"> <i class="fa fa-edit fa-5x"></i><br>
             <p>Egyszerű oldal</p></a>
             <div id="center">
                 <table>
@@ -85,12 +158,12 @@
             </div>
         </div>
     </div>
-
+<!----------------------------  AJANLAT2  --------------------------------->
 
         <br>
         <div id="ajanlat2">
         <div id="textbubble">
-            <a href="pages/elemzes/index.html"><i class="fab fa-js-square fa-5x"></i><br>
+            <a onclick="ajanlat2()"><i class="fab fa-js-square fa-5x"></i><br>
             <p>Néhány hozzáadott javasript funkció</p></a>
 
 
@@ -108,7 +181,7 @@
          
                     </tr>
                     <tr>
-                    <td class="column1">2db stílus (css)</td>
+                    <td class="column1">Maximum 2db stílus (css)</td>
                  
                     </tr>
 
@@ -136,7 +209,7 @@
 
                     <br>
                     
-                    <button>Ajánlatkérés</button>
+                    <button onclick="ajanlat2()">Ajánlatkérés</button>
             </div>
 
 
@@ -147,10 +220,10 @@
 
 
 
+<!----------------------------  FORM1  --------------------------------->
 
 
-
-    <div id="ajanlatszoveg1" style="display: none;">
+    <div id="form1" style="display: none;">
         <div id="textbubble">
 
 
@@ -187,7 +260,7 @@
                   <textarea name="name" rows="7" cols="24" placeholder="Ajánlat" class="form__input" id="uzenet" maxlength="1000" required></textarea>
                 </div>
 
-              <button>Ajánlat beküldése</button>
+              <button onclick="sendMail1()">Ajánlat beküldése</button>
                 
                 
               </form>
@@ -206,7 +279,7 @@
 
 
         <br>
-        <button onclick="vissza1()">Vissza</button>
+        <button onclick="vissza()">Vissza</button>
         <br>
 
 
@@ -215,30 +288,76 @@
 
 
 
+<!----------------------------  FORM2  --------------------------------->
+
+
+
+
+    <div id="form2" style="display: none;">
+        <div id="textbubble">
 
 
 
 
 
 
+            <form>
+                  
+                <div class="group">      
+                  <input type="text" required id="nev2">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Név</label>
+                </div>
+                <div class="group">
+                    
+
+                    <input type="text" required id="insta2">   
+                  
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Instagram</label>
+                </div>
+                  
+                <div class="group">      
+                  <input type="email" required id="email2">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Email</label>
+                </div>
+
+                <div class="group">      
+                  <textarea name="name" rows="7" cols="24" placeholder="Ajánlat" class="form__input" id="uzenet2" maxlength="1000" required></textarea>
+                </div>
+
+              <button onclick="sendMail2()">Ajánlat beküldése</button>
+                
+                
+              </form>
+
+
+
+              
 
 
 
 
-    <script>
-        function ajanlat1(){
-    var ajanlat1 = document.getElementById("ajanlatszoveg1");
-    var ajalnat2 = document.getElementById("ajanlat2");
-
-        document.getElementById("ajanlatszoveg1").style.display === "block";
-        document.getElementById("ajanlat1").style.display === "none";
- 
+        </div>
 
 
 
-}
 
-    </script>
+
+        <br>
+        <button onclick="vissza()">Vissza</button>
+        <br>
+
+
+
+    </div>
+
+
+
 
 
 
