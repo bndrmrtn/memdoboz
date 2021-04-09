@@ -158,3 +158,7 @@ a:hover {
 #blackbody {
     background-color: black;
 }
+
+#notfind {
+    color:rgb(73, 71, 71);
+}
