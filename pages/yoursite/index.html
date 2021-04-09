@@ -35,7 +35,7 @@ function sendEmail1() {
     Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value,
   })
     .then(function (message) {
-      alert("1")
+      alert("Ajánlatkérés sikeresen elküldve")
     });
 }
 </script>
@@ -60,7 +60,7 @@ function sendEmail2() {
     Body: "Név: " + document.getElementById("nev2").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta2").value + " Email cím: " + document.getElementById("email2").value + " Üzenet: " + document.getElementById("uzenet2").value,
   })
     .then(function (message) {
-      alert("2")
+      alert("Ajánlatkérés sikeresen elküldve")
     });
 }
 </script>
@@ -154,7 +154,7 @@ function sendEmail2() {
 
                     <br>
                     
-                   <button onclick="ajanlat1()">Ajánlatkérés</button>
+                   <button onclick="ajanlat1()" id="gomb1">Ajánlatkérés</button>
             </div>
         </div>
     </div>
@@ -209,7 +209,7 @@ function sendEmail2() {
 
                     <br>
                     
-                    <button onclick="ajanlat2()">Ajánlatkérés</button>
+                    <button onclick="ajanlat2()" id="gomb2">Ajánlatkérés</button>
             </div>
 
 
@@ -226,12 +226,12 @@ function sendEmail2() {
     <div id="form1" style="display: none;">
         <div id="textbubble">
 
+        
 
 
 
 
-
-            <form>
+            
                   
                 <div class="group">      
                   <input type="text" required id="nev">
@@ -260,12 +260,12 @@ function sendEmail2() {
                   <textarea name="name" rows="7" cols="24" placeholder="Ajánlat" class="form__input" id="uzenet" maxlength="1000" required></textarea>
                 </div>
 
-              <button onclick="sendMail1()">Ajánlat beküldése</button>
+              <button onclick="sendEmail1()">Ajánlat beküldése</button>
                 
                 
-              </form>
+              
 
-
+            
 
               
 
@@ -294,6 +294,7 @@ function sendEmail2() {
 
 
     <div id="form2" style="display: none;">
+        <br>
         <div id="textbubble">
 
 
@@ -301,7 +302,6 @@ function sendEmail2() {
 
 
 
-            <form>
                   
                 <div class="group">      
                   <input type="text" required id="nev2">
@@ -330,10 +330,10 @@ function sendEmail2() {
                   <textarea name="name" rows="7" cols="24" placeholder="Ajánlat" class="form__input" id="uzenet2" maxlength="1000" required></textarea>
                 </div>
 
-              <button onclick="sendMail2()">Ajánlat beküldése</button>
+              <button onclick="sendEmail2()">Ajánlat beküldése</button>
                 
                 
-              </form>
+    
 
 
 
@@ -425,5 +425,3 @@ function sendEmail2() {
 
     </body>
 </html>
-
-<!--/pages/QWRtaW4=/RmlyZWJhc2U=/bG9naW4=/login.html-->
