@@ -23,6 +23,16 @@ function vissza() {
     document.getElementById("form2").style.display = "none";
     document.getElementById("gomb1").style.display = "unset";
     document.getElementById("gomb2").style.display = "unset";
+    document.getElementById("peldak").style.display = "none";
+}
+
+
+function peldak() {
+    document.getElementById("ajanlat1").style.display = "none";
+    document.getElementById("peldak").style.display = "block";
+    document.getElementById("form2").style.display = "none";
+    document.getElementById("gomb1").style.display = "none";
+    document.getElementById("gomb2").style.display = "none";
 }
 
 
