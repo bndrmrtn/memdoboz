@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../../css/styles2.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/button.css">
+
+</script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://kit.fontawesome.com/75724ff95e.js" crossorigin="anonymous"></script>
+<!-- Google anality -->
+   
+    <head>
+        <title>Hírdetés</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script data-ad-client="ca-pub-7148066920931015" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <script src=
+        "https://smtpjs.com/v3/smtp.js">
+      </script>
+      
+      <script type="text/javascript">
+        function sendEmail() {
+           alert("NE SPAMELD A BEKÜLDÉS GOMBOT! VISSZAJELZÉST KÜLDÜNK, HA AZ ÜZENETED EL LETT KÜLDVE");
+          Email.send({
+            Host: "smtp.gmail.com",
+            Username: "memdobozweb@gmail.com",
+            Password: "MemDobozweb1",
+            To: 'memdoboz@gmail.com',
+            From: "memdobozweb@gmail.com",
+            Subject: "discord modi",
+            Body: "Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Üzenet " + document.getElementById("uzenet").value,
+          })
+            .then(function (message) {
+              alert("Elküldtük az üzenetét");
+              window.open("https://memdoboz.xyz/pages/visszajelzes");
+            });
+        }
+      </script>
+    </head>
+
+    
+    <body>
+        <br>
+        <div class="fej">
+            <br>
+            <h1 class="cim"><a href="../../index.html" id="whitea">MémDoboz</a></h1>
+            <br>
+
+     <!--   </div>
+        <div id="menubar">
+            <div class="menu">
+              <button class="menugomb">Menü</button>
+              <div class="menutartalom">
+                <a href="../../index.html">Főoldal</a>
+                <a href="../elemzes/index.html">Elemzések</a>
+                <a href="../linkek/index.html">Linkek</a>
+              </div>
+            </div>
+          </div>
+        <br>-->
+          <br>
+
+       <div id="textbubble">
+
+
+            <div class="container">
+  
+                <h2>Visszajelzés<small>MémDoboz</small></h2>
+
+                
+                
+                  
+
+                  <div class="group">      
+                    <textarea name="name" rows="1" cols="24" placeholder="Instagram" class="form__input" id="insta" required></textarea>
+                  </div>
+ 
+                  <div class="group">      
+                    <textarea name="name" rows="5" cols="24" placeholder="Üzenet" class="form__input" id="uzenet" maxlength="600" required></textarea>
+                  </div>
+
+  
+
+                 <a href="javascript:;" id="send"  onclick="sendEmail()">
+                    <svg class="icon-arrow before">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span class="label">Küldés</span>
+                    <svg class="icon-arrow after">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </a>
+                
+                <svg style="display: none;">
+                  <defs>
+                    <symbol id="arrow" viewBox="0 0 35 15">
+                      <title>Arrow</title>
+                      <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "/>
+                    </symbol>
+                  </defs>
+                </svg>
+                  
+                
+              </div>
+
+
+              <br>
+
+
+
+
+         <!--    <script>
+                  const $input = document.getElementById("#insta");
+                  const INSTA = /[0-9\/]+/;
+                  $input.addEventListener("keydown", event => {if(!INSTA.test(event.key))
+
+                {       event.preventDefault(); }  })
+              </script>
+--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!---       <form >
+                <input placeholder="Keresztnév" type="text" required class="form__input2" id="knev">
+                <input placeholder="Vezetéknév" type="text" required class="form__input2" id="vnev">
+                <br>
+                <input placeholder="Instagram felhasználónév" type="text" required class="form__input" id="insta">
+                <br>
+                <input placeholder="Email cím" type="email" " required class="form__input" id="email">
+                <br>
+                <textarea id="uzenet" name="name" rows="3" cols="24" placeholder="Üzenet" class="form__input" required></textarea>
+                <br>
+                <input type="button" class="gomb" value="Küldés" 
+                onclick="sendEmail()" />
+            </form>-->
+        </div>
+<br>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first 
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>-->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries 
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>-->
+<!--
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDjBghP4vIzugMxMK2_NkzY6kMiZrfZGbo",
+        authDomain: "memdoboz-8ca61.firebaseapp.com",
+        projectId: "memdoboz-8ca61",
+        storageBucket: "memdoboz-8ca61.appspot.com",
+        messagingSenderId: "525051210647",
+        appId: "1:525051210647:web:61b094cca4e2269917f2d2",
+        measurementId: "G-TTCGF1K1PY"
+    };
+    // Initialize Firebase
+    firebase.analytics();
+    firebase.initializeApp(firebaseConfig);
+    
+
+    function writeData(){
+        firebase.database().ref("User").set({
+            name: document.getElementById("nameField").value ,
+            age: document.getElementById("ageField").value ,
+        });
+    }
+    </script>
+-->
+
+<!--<div id="textbubble">
+    <h2>Hírdetéssel kapcsolatos kapcsolatfelvételi lehetsőség</h2>
+    <input type="text" placeholder="Név" id="nameField">
+    <input type="text" placeholder="Email" id="ageField">
+    <button onclick="writeData()">Küldés</button>
+</div>-->
+
+
+
+<script language=JavaScript>
+    
+    
+    //Disable right mouse click Script
+    //By Geek Site.in
+    
+    
+    var message="Engedély megtagadva!";
+    
+    ///////////////////////////////////
+    function clickIE4(){
+    if (event.button==2){
+    alert(message);
+    return false;
+    }
+    }
+    
+    function clickNS4(e){
+    if (document.layers||document.getElementById&&!document.all){
+    if (e.which==2||e.which==3){
+    alert(message);
+    return false;
+    }
+    }
+    }
+    
+    if (document.layers){
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown=clickNS4;
+    }
+    else if (document.all&&!document.getElementById){
+    document.onmousedown=clickIE4;
+    }
+    
+    document.oncontextmenu=new Function("alert(message);return false")
+    
+    // --> 
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="fej">
+        <br>
+        <a href="https://instagram.com/memdoboz"><p><i class="fab fa-instagram fa-3x"></i></a><br>
+            <a href="https://instagram.com/memdoboz">Instagram</a></p>
+        <br>
+    </div>
+    </body>
+</html>
