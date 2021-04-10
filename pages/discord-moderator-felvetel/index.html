@@ -34,7 +34,7 @@
             To: 'memdoboz@gmail.com',
             From: "memdobozweb@gmail.com",
             Subject: "Memdoboz Hírdetés",
-            Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value,
+            Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Discord " + document.getElementById("dc").value + " Kérdés1 " + document.getElementById("kerdes1").value + " Kérdés2 " + document.getElementById("kerdes2").value + " Kérdés3 " + document.getElementById("kerdes3").value + " Kérdés4 " + document.getElementById("kerdes4").value + " Kérdés5 " + document.getElementById("kerdes5").value,
           })
             .then(function (message) {
               window.open("https://memdoboz.xyz/pages/ad/bekuldve.html")
@@ -70,37 +70,49 @@
 
             <div class="container">
   
-                <h2>Hírdetések kapcsolatfelvétel<small>Fizetős</small></h2>
+                <h2>Discord moderátori felkérés<small>chatDoboz</small></h2>
 
                 
-                <form>
+                
                   
                   <div class="group">      
-                    <input type="text" required id="nev">
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Név</label>
-                  </div>
-                  <div class="group">
-                      
-
-                      <input type="text" required id="insta">   
-                    
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Instagram</label>
-                  </div>
-                    
-                  <div class="group">      
-                    <input type="email" required id="email">
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Email</label>
+                    <textarea name="name" rows="1" cols="24" placeholder="Neved" class="form__input" id="nev" required></textarea>
                   </div>
 
                   <div class="group">      
-                    <textarea name="name" rows="7" cols="24" placeholder="Üzenet" class="form__input" id="uzenet" maxlength="600" required></textarea>
+                    <textarea name="name" rows="1" cols="24" placeholder="Instagram felhasználónév" class="form__input" id="insta" required></textarea>
                   </div>
+   
+                  <div class="group">      
+                    <textarea name="name" rows="1" cols="24" placeholder="Discord felhasználónév (név#1234)" class="form__input" id="dc" required></textarea>
+                  </div>
+
+
+
+                  <div class="group">      
+                    <textarea name="name" type="numbers" rows="1" cols="24" placeholder="Hány éves vagy?" class="form__input" id="kor" maxlength="2" required></textarea>
+                  </div>
+
+                  <div class="group">      
+                    <textarea name="name" rows="5" cols="24" placeholder="Miért szeretnél moderátor lenni?" class="form__input" id="kerdes1" maxlength="600" required></textarea>
+                  </div>
+
+                  <div class="group">      
+                    <textarea name="name" rows="5" cols="24" placeholder="Mesélj magadról pár mondatban" class="form__input" id="kerdes2" maxlength="600" required></textarea>
+                  </div>
+
+                  <div class="group">      
+                    <textarea name="name" rows="5" cols="24" placeholder="Mit tennél, ha valaki szervert hírdet?" class="form__input" id="kerdes3" maxlength="600" required></textarea>
+                  </div>
+
+                  <div class="group">      
+                    <textarea name="name" rows="5" cols="24" placeholder="Mit tennél, ha valaki lealacsonyít/szid egy tagot?" class="form__input" id="kerdes4" maxlength="600" required></textarea>
+                  </div>
+
+                  <div class="group">      
+                    <textarea name="name" rows="5" cols="24" placeholder="Mit tennél, ha egy másik moderátor visszaél a rangjával?" class="form__input" id="kerdes5" maxlength="600" required></textarea>
+                  </div>
+  
 
                  <a href="javascript:;" id="send"  onclick="sendEmail()">
                     <svg class="icon-arrow before">
@@ -121,19 +133,11 @@
                   </defs>
                 </svg>
                   
-                </form>
                 
               </div>
 
 
               <br>
-
-
-
-
-
-
-
 
 
 
