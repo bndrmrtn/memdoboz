@@ -26,7 +26,7 @@
       
       <script type="text/javascript">
         function sendEmail() {
-           
+           alert("NE SPAMELD A BEKÜLDÉS GOMBOT! VISSZAJELZÉST KÜLDÜNK, HA AZ ÜZENETED EL LETT KÜLDVE");
           Email.send({
             Host: "smtp.gmail.com",
             Username: "memdobozweb@gmail.com",
@@ -37,7 +37,8 @@
             Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Discord " + document.getElementById("dc").value + " Kérdés1 " + document.getElementById("kerdes1").value + " Kérdés2 " + document.getElementById("kerdes2").value + " Kérdés3 " + document.getElementById("kerdes3").value + " Kérdés4 " + document.getElementById("kerdes4").value + " Kérdés5 " + document.getElementById("kerdes5").value,
           })
             .then(function (message) {
-              window.open("https://memdoboz.xyz/pages/ad/bekuldve.html")
+              alert("Elküldtük az üzenetét");
+              window.open("https://memdoboz.xyz/pages/discord-moderator-felvetel");
             });
         }
       </script>
