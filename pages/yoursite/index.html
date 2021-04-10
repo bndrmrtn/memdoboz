@@ -32,7 +32,7 @@ function sendEmail1() {
     To: 'memdoboz@gmail.com',
     From: "memdobozweb@gmail.com",
     Subject: "Webdoboz egyszerű oldal ajánlat",
-    Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value,
+    Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Email cím: " + document.getElementById("email").value + " Üzenet: " + document.getElementById("uzenet").value + " Költségkeret " + document.getElementById("ar").value + "Ft",
   })
     .then(function (message) {
       alert("Ajánlatkérés sikeresen elküldve")
@@ -57,7 +57,7 @@ function sendEmail2() {
     To: 'memdoboz@gmail.com',
     From: "memdobozweb@gmail.com",
     Subject: "Webdoboz js oldal",
-    Body: "Név: " + document.getElementById("nev2").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta2").value + " Email cím: " + document.getElementById("email2").value + " Üzenet: " + document.getElementById("uzenet2").value,
+    Body: "Név: " + document.getElementById("nev2").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta2").value + " Email cím: " + document.getElementById("email2").value + " Üzenet: " + document.getElementById("uzenet2").value + " Költségkeret " + document.getElementById("ar2").value + "Ft",
   })
     .then(function (message) {
       alert("Ajánlatkérés sikeresen elküldve")
@@ -261,7 +261,14 @@ function sendEmail2() {
                 </div>
 
                 <div class="group">      
-                  <textarea name="name" rows="7" cols="24" placeholder="Ajánlat" class="form__input" id="uzenet" maxlength="1000" required></textarea>
+                  <input type="number" required id="ar">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Költségkeret <small>(Ft)</small></label>
+                </div>
+
+                <div class="group">      
+                  <textarea name="name" rows="7" cols="24" placeholder="Írd le milyen weboldalt szeretnél" class="form__input" id="uzenet" maxlength="1000" required></textarea>
                 </div>
 
               <button onclick="sendEmail1()">Ajánlat beküldése</button>
@@ -331,7 +338,14 @@ function sendEmail2() {
                 </div>
 
                 <div class="group">      
-                  <textarea name="name" rows="7" cols="24" placeholder="Ajánlat" class="form__input" id="uzenet2" maxlength="1000" required></textarea>
+                  <input type="number" required id="ar2">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Költségkeret <small>(Ft)</small></label>
+                </div>
+
+                <div class="group">      
+                  <textarea name="name" rows="7" cols="24" placeholder="Írd le milyen weboldalt szeretnél" class="form__input" id="uzenet2" maxlength="1000" required></textarea>
                 </div>
 
               <button onclick="sendEmail2()">Ajánlat beküldése</button>
