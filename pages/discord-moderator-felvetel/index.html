@@ -34,7 +34,7 @@
             To: 'memdoboz@gmail.com',
             From: "memdobozweb@gmail.com",
             Subject: "discord modi",
-            Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Discord " + document.getElementById("dc").value + " Kérdés1 " + document.getElementById("kerdes1").value + " Kérdés2 " + document.getElementById("kerdes2").value + " Kérdés3 " + document.getElementById("kerdes3").value + " Kérdés4 " + document.getElementById("kerdes4").value + " Kérdés5 " + document.getElementById("kerdes5").value,
+            Body: "Név: " + document.getElementById("nev").value + " Instagram felhasználónév: " + "https://instagram.com/" + document.getElementById("insta").value + " Discord " + document.getElementById("dc").value + " Kérdés1 " + document.getElementById("kerdes1").value + " Kérdés2 " + document.getElementById("kerdes2").value + " Kérdés3 " + document.getElementById("kerdes3").value + " Kérdés4 " + document.getElementById("kerdes4").value + " Kérdés5 " + document.getElementById("kerdes5").value + " Kérdés6 " + document.getElementById("kerdes6").value,
           })
             .then(function (message) {
               alert("Elküldtük az üzenetét");
@@ -113,6 +113,15 @@
                   <div class="group">      
                     <textarea name="name" rows="5" cols="24" placeholder="Mit tennél, ha egy másik moderátor visszaél a rangjával?" class="form__input" id="kerdes5" maxlength="600" required></textarea>
                   </div>
+
+                  <div class="group">      
+                    <textarea name="name" rows="5" cols="24" placeholder="Valami egyéb ötlet a szerverhez?" class="form__input" id="kerdes5" maxlength="600" required></textarea>
+                  </div>
+
+                  <div class="group">
+                    <p>Ügyelj arra, hogy minden mező ki legyen töltve vagy érvénytelen!</p>
+                  </div>
+                  
   
 
                  <a href="javascript:;" id="send"  onclick="sendEmail()">
