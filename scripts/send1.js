@@ -17,7 +17,12 @@ function ajanlat2() {
 
 
 function vissza() {
-    window.open("https://memdoboz.xyz/pages/yoursite");
+    document.getElementById("ajanlat1").style.display = "block";
+    document.getElementById("ajanlat2").style.display = "block";
+    document.getElementById("form1").style.display = "none";
+    document.getElementById("form2").style.display = "none";
+    document.getElementById("gomb1").style.display = "unset";
+    document.getElementById("gomb2").style.display = "unset";
 }
 
 
