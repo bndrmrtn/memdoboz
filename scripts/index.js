@@ -34,5 +34,3 @@ function peldak() {
     document.getElementById("gomb1").style.display = "none";
     document.getElementById("gomb2").style.display = "none";
 }
-
-
