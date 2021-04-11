@@ -1,11 +1,28 @@
-#sbutton {
+#dbutton {
     height: 200px;
     width: 200px;
-    background-color: black;
-    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-color: black;
+}
+
+#dbutton:hover {
+    background-color: rgb(136, 131, 131);
+    color: white;
+}
+
+
+
+
+#fbutton {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
     border-radius: 10px;
 }
 
-#sbutton:hover {
-    background-color: gray;
+#fbutton:hover {
+    background: url(../images/fa.jpg) repeat center;
+    color: white;
 }
