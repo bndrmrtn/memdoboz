@@ -1,0 +1,11 @@
+#sbutton {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+#sbutton:hover {
+    background-color: gray;
+}
