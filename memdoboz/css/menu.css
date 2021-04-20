@@ -60,3 +60,52 @@
 }
 
 */ 
+
+
+
+
+.menu {
+    position: relative;
+    display: inline-block;
+  }
+
+
+.menutartalom {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menutartalom a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.menutartalom a:hover {background-color: #ddd;}
+
+
+.menu:hover .menutartalom {display: block;}
+
+.menu:hover .menugomb {
+    background-color: #d1d1d1;
+    color: rgb(0, 0, 0);
+
+
+
+
+
+}
+
+.menugomb {
+    color: black;
+    background-color: whitesmoke;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 200px;
+}

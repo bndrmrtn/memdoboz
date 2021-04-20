@@ -162,3 +162,12 @@ a:hover {
 #notfind {
     color:rgb(73, 71, 71);
 }
+
+#cim {
+    color: whitesmoke;
+
+}
+
+#cim:hover {
+    color: rgb(65, 65, 65);
+}
