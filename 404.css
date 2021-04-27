@@ -62,9 +62,9 @@
 }
 
 a {
-  color: rgb(129, 214, 0);
+  color: red;
 }
 
 a:hover {
-  color: red;
+  color: rgb(75, 75, 75);
 }
