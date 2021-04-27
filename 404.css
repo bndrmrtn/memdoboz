@@ -32,39 +32,3 @@
 
 /*-------------------------------------fooldal----------------------------------*/
 
-#vissza {
-  border-right: solid 3px rgba(68, 68, 68, 0.75);
-  white-space: nowrap;
-  overflow: hidden;    
-  font-size: 28px;
-  color: rgba(255,255,255,.70);
-  margin: 0 auto;
-}
-
-/* Animation */
-#vissza {
-  animation: animated-text 3s steps(29,end) 1s 1 normal both,
-  animated-cursor 600ms steps(29,end) infinite;
-}
-
-/* text animation */
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 250px;}
-}
-
-/* cursor animations */
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(255, 255, 255, 0.75);}
-  to{border-right-color: transparent;}
-}
-
-a {
-  color: red;
-}
-
-a:hover {
-  color: rgb(75, 75, 75);
-}
